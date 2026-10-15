@@ -106,25 +106,6 @@ ng.plot_populations(res)
 `energy`, `norm`, the coupling energy `coupling`, the matrix `W` of
 `<g_i|V_ij|g_j>`, and the conservation diagnostics `dEmax`, `dNmax`.
 
-## Equations of motion
-
-For state `i` and mode `k`, with `d_i = |c_i|^2 + eps`:
-
-```
-qdot = p/m + (2/d) Im C
-pdot = -<grad V_ii> - (2/d) ( A Re C + B Im C )
-Zdot = -i ( Z M^-1 Z - Hess V_ii )
-       + (4i/d) A [ sum_j c_i* c_j (R_ij - W_ij A^-1/2) ] A          [thawed]
-i cdot_i = ( <T+V_ii> - p.qdot - 1/4 tr(A^-1 Bdot) ) c_i + sum_j W_ij c_j
-```
-
-with `W_ij = <g_i|V_ij|g_j>`, `M_ij = <g_i|(x-q_i) V_ij|g_j>`,
-`R_ij = <g_i|(x-q_i)(x-q_i)^T V_ij|g_j>` and `C_i = sum_j c_i* c_j M_ij`.
-These are the full variational equations: the coupling terms in `qdot`,
-`pdot` and `Zdot` and the breathing-width phase in `cdot` are all present.
-`drop_corrections=1` switches the coupling corrections off for comparison,
-and `legacy=True` reproduces an earlier, incomplete form.
-
 ## Models
 
 `initialize.py` provides `lvc` (quadratic diabats, the general
