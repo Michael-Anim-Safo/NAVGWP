@@ -19,15 +19,4 @@ __pycache__/
 *.fls
 *.fdb_latexmk
 
-# ---- misc -----------------------------------------------------------------
-navgwp_v2_package.zip
-.DS_Store
 
-# ---- documentation sources/builds and standalone helpers (not published) ---
-navgwp_v2/CODE_DOC.*
-navgwp_v2/compute_derivations.*
-navgwp_v2/FORMALISM.*
-navgwp_v2/MORSE_MODEL.*
-navgwp_v2/DESIGN.md
-navgwp_v2/navgwp2_single.py
-navgwp_v2/run_tests.py
