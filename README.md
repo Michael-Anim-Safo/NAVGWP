@@ -127,6 +127,8 @@ Couplings may be constant, linear, Gaussian, Gaussian × linear, or supplied
 numerically (`quad_coupling`, D = 1). Morse diabats carried in
 `model["morse"]` use exact closed-form Gaussian averages.
 
+Some models were taken from [Libra](https://github.com/Quantum-Dynamics-Hub/libra-code).
+
 ## Initialisation
 
 A run is fixed by four things, all arguments of `run`:
